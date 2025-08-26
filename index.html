@@ -6,11 +6,15 @@
     <title>Arthan — Enabling deployment for the next million robots</title>
     <meta name="description" content="Enabling deployment for the next million robots." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href="/" />
+    <link rel="canonical" href="https://arthanrobotics.com/" />
+    <meta name="keywords" content="robotics, robot deployment, automation, industrial robots, robotic solutions, AI robotics" />
+    <meta name="author" content="Arthan Robotics" />
 
     <!-- Icons -->
-    <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23fff9e6'/%3E%3Cpath d='M18 16h28v6H24v10h20v6H24v10h22v6H18z' fill='%23111'/%3E%3C/svg%3E" />
-    <link rel="mask-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M18 16h28v6H24v10h20v6H24v10h22v6H18z' fill='%23000'/%3E%3C/svg%3E" color="#111111" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23111'/%3E%3Cpath d='M16 8L10 24h2.5l1.3-4h4.4l1.3 4H22L16 8zm0 5.5l1.3 4h-2.6l1.3-4z' fill='%23fff9e6'/%3E%3C/svg%3E" />
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHKSURBVFiFxZe9TsNADMd/l5ZSqEDqwMAGEhMLT8ADMLHxCjwBEy/AG/AKvAETCwMLEhNiYAAJJKgqWkrb3DGcL7m7O1IqfiPR2f7/7HN8H2CMYRVlVineBQDGGIQQAMznc6bTKf1+n263S7fb5fb2lslkgpQSKSVSSqSUSCn5C+A4Dp7n4fs+vu8jhMDzPIQQuK5Lp9PBdV1c18V1XRzHwXEcVhawHs/nczRNw3VdPM/D8zw8z6PVarUGWJY1TaNpGlVVkaYpZVlSFAVlWVIUBUVRkOc5eZ6T5zlZlpFlGWmakqYpSZKQJAlxHBPHMVEUEUUR4ziO38BqtVqMRiMURWE8HhOGIUEQEAQBw+GQ4XDIT+UrYJRlGVVVUZYlRVEANAAsQgjG4zGKonB5ecnj4yO3t7d8v78ThuH6AA5Ir9fj6OiIvb097u/veX5+5uPjg8PDQ05PT9nf36fdbrcLsFJVlbquq7quK1VVleM4leM4let2K9d1q1br3wCaptGkaQqApmmLj7phgO/7bG5uMplMODs749/BxgBCCFqtFs/Pz2xvb+M4DnmeLwdwHOfl5YWDDQ9d13l9feXm5oarqytisVIAu8XaAuyn+AUrZJJEaRHiywAAAABJRU5ErkJggg==" />
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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" />
+    <link rel="mask-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 8L10 24h2.5l1.3-4h4.4l1.3 4H22L16 8zm0 5.5l1.3 4h-2.6l1.3-4z' fill='%23000'/%3E%3C/svg%3E" color="#111111" />
     <meta name="theme-color" content="#fff9e6" />
     <meta name="color-scheme" content="light only" />
     <meta name="application-name" content="Arthan" />
@@ -18,10 +22,12 @@
 
     <!-- Open Graph  -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arthanrobotics.com/" />
     <meta property="og:title" content="Arthan — Enabling deployment for the next million robots" />
     <meta property="og:description" content="Enabling deployment for the next million robots." />
+    <meta property="og:site_name" content="Arthan Robotics" />
     <meta property="og:locale" content="en_US" />
-    <meta name="x:card" content="summary" />
+    
     <style>
       html, body { height: 100%; }
       body {
@@ -197,7 +203,15 @@
       }
     </style>
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"Organization","name":"Arthan Robotics"}
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Arthan Robotics",
+        "url": "https://arthanrobotics.com",
+        "description": "Enabling deployment for the next million robots",
+        "email": "hello@arthanrobotics.com",
+        "foundingDate": "2025"
+      }
     </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ee64fc40-7de4-470e-85c9-d9ca12fe6101"></script>
   </head>
@@ -255,7 +269,7 @@
             input.focus();
             return;
           }
-          var mailto = "mailto:hello@arthanrobotics.com?subject=" + encodeURIComponent("Contact") + "&body=" + encodeURIComponent(message);
+          var mailto = "mailto:hello@arthanrobotics.com?subject=" + encodeURIComponent("Contact Arthan") + "&body=" + encodeURIComponent(message);
           window.location.href = mailto;
         });
       })();
